@@ -1,7 +1,4 @@
-tensorflow==2.10.0
-h5py==2.10.0
-numpy==1.18.5
-opencv-python
-streamlit
-matplotlib
-Pillow
+streamlit==1.47.1
+tensorflow==2.10.0  # Or a later version known to be stable with Python 3.10
+numpy==1.23.5       # A version known to be compatible with TensorFlow 2.10.0 and Python 3.10
+Pillow==9.9.0 
