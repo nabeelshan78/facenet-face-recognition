@@ -1,9 +1,5 @@
 # Face Recognition with FaceNet
 
-<p align="center">
-  <img src="./nn_model.png" alt="Face Recognition" width="700"/>
-</p>
-
 This project demonstrates a face recognition and verification system using a **pretrained FaceNet model**. It compares faces based on their embeddings - 128D numerical vectors - that capture unique features of each face.
 
 ---
