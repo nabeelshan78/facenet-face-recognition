@@ -137,18 +137,13 @@ facenet-face-recognition/
 Here are some screenshots showcasing the application's interface and functionalities:
 
 ### Face Verification in Action
-![Face Verification Demo](images/demo_verification.png)
+![Face Verification Demo](out_images/verification_go_away.png)
+![Face Verification Demo](out_images/verification_welcome.png)
 _Verify if an uploaded image matches a claimed identity from the database._
 
 ### Face Recognition in Action
-![Face Recognition Demo](images/demo_recognition.png)
+![Face Recognition Demo](out_images/recognition.png)
 _Identify an unknown person from your database._
-
-### Manage Database Section
-![Manage Database Demo](images/demo_manage_db.png)
-_Add new faces or view all existing entries in your database._
-
-*(Note: The `images/demo_*.png` files are placeholders. You would replace these with actual screenshots from your running application.)*
 
 ---
 
@@ -230,4 +225,4 @@ This project stands on the shoulders of giants. Special thanks to:
 
 ## 🧑‍💻 Developed By
 
-This robust application has been meticulously developed by me, a passionate and aspiring AI/ML Engineer and a third-year undergraduate in Software Engineering at MCS, NUST Islamabad. This project showcases my dedication to building high-impact solutions and my commitment to advancing my skills towards securing a fully-funded US Master's in AI/ML and a career at a top tech company. I am excited to continue contributing to the field through practical applications and research.
+This robust application has been meticulously developed by me, a passionate and aspiring AI/ML Engineer and a third-year undergraduate in Software Engineering at NUST Islamabad. This project showcases my dedication to building high-impact solutions and my commitment to advancing my skills in AI/ML. I am excited to continue contributing to the field through practical applications and research.
