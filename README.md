@@ -112,21 +112,43 @@ The repository is organized as follows:
 ```
 facenet-face-recognition/
 ├── .gitattributes
-├── app.py                      # Main Streamlit application script
-├── face.png                    # Project banner image
-├── nn_model.png                # Another potential banner/diagram image
-├── notebook.ipynb              # Jupyter notebook for model exploration/testing
-├── images/                     # Directory for database images and demo screenshots
-│   ├── andrew.jpg
-│   ├── arnaud.jpg
-│   ├── benoit.jpg
-│   ├── bertrand.jpg
-│   ├── camera_0_younes.jpg     # Example test images
-│   ├── ... (other database images)
-│   └── younes.jpg
-└── keras-facenet-h5/           # Directory for the pre-trained FaceNet model
-    ├── model.h5                # Pre-trained FaceNet model weights
-    └── model.json              # FaceNet model architecture definition
+├── app.py                      # Main Streamlit application script for the UI.
+├── assets/                     # Contains all images and videos used in the README and for demo purposes.
+│   ├── databse_sec_img.png     # Image related to database section (e.g., database overview).
+│   ├── db_manage_add_person.png # Screenshot for adding a person to the database.
+│   ├── db_manage_add_person_result.png # Screenshot showing result after adding a person.
+│   ├── demo_video.mp4          # A comprehensive video demonstration of the application.
+│   ├── face_recognition_home.png # Screenshot of the main face recognition page.
+│   ├── fr_1_result.png         # Result of a face recognition attempt (example 1).
+│   ├── fr_1_upload.png         # Screenshot for uploading an image for face recognition (example 1).
+│   ├── fr_2_choose_from_db.png # Screenshot for choosing from DB for face recognition (example 2).
+│   ├── fv_1_claimed_id.png     # Claimed identity image for face verification (example 1).
+│   ├── fv_1_verify_img.png     # Image to verify for face verification (example 1).
+│   ├── fv_2_claimed_id.png     # Claimed identity image for face verification (example 2).
+│   ├── fv_2_verify_img.png     # Image to verify for face verification (example 2).
+│   ├── fv_2_verify_img_welcome.png # Welcome screen for face verification (example 2).
+│   ├── hiw_2.png               # Part 2 of "How It Works" diagram/explanation.
+│   ├── hiw_3.png               # Part 3 of "How It Works" diagram/explanation.
+│   ├── hiw_4.png               # Part 4 of "How It Works" diagram/explanation.
+│   ├── hiw_5.png               # Part 5 of "How It Works" diagram/explanation.
+│   ├── how_it_works_1.png      # Part 1 of "How It Works" diagram/explanation.
+│   └── main_page.png           # Screenshot of the application's main landing page.
+├── face.png                    # Project banner image or primary logo.
+├── images/                     # Directory containing sample face images for the database.
+│   ├── andrew.jpg              # Sample face image.
+│   ├── arnaud.jpg              # Sample face image.
+│   ├── benoit.jpg              # Sample face image.
+│   ├── bertrand.jpg            # Sample face image.
+│   ├── camera_0_younes.jpg     # Example test image from camera feed.
+│   ├── ... (and many more sample images for testing and demonstration)
+│   └── younes.jpg              # Sample face image.
+├── keras-facenet-h5/           # Contains the pre-trained FaceNet model weights and architecture.
+│   ├── model.h5                # Pre-trained FaceNet model weights (HDF5 format).
+│   └── model.json              # FaceNet model architecture definition (JSON format).
+├── nn_model.png                # Diagram or visualization of the neural network model.
+├── notebook.ipynb              # Jupyter notebook for model experimentation, testing, and data preparation.
+└── README.md                   # Project Documentation
+
 ```
 
 ---
@@ -134,18 +156,46 @@ facenet-face-recognition/
 
 ## 🧪 Demo Examples
 
-Here are some screenshots showcasing the application's interface and functionalities:
+Witness the power of FaceNet in action! Below are illustrative screenshots and a video demonstrating the key functionalities of the application.
+
+### 🎥 Live Demonstration
+
+For a comprehensive overview of the application's features and flow, watch the demo video:
+
+[![Demo Video Thumbnail](assets/main_page.png)](assets/demo_video.mp4)
+*Click the image to watch the full demo video.*
 
 ### Face Verification in Action
-![Face Verification Demo](out_images/verification_go_away.png)
-![Face Verification Demo](out_images/verification_welcome.png)
-_Verify if an uploaded image matches a claimed identity from the database._
+
+Verify if an uploaded image matches a claimed identity from your database with high accuracy.
+
+| Claimed Identity | Upload Image for Verification & Verification Result |
+|:-----------------------------:|:--------------------------------------:|
+| ![Claimed Identity](assets/fv_1_claimed_id.png) | ![Upload Image and Verification Result](assets/fv_1_verify_img.png) |
+| ![Claimed Identity](assets/fv_2_claimed_id.png) | ![Upload Image and Verification Result](assets/fv_2_verify_img.png) |
+|                               | ![Verification Result Welcome](assets/fv_2_verify_img_welcome.png) |
+
 
 ### Face Recognition in Action
-![Face Recognition Demo](out_images/recognition.png)
-_Identify an unknown person from your database._
+
+Identify unknown individuals by matching them against your comprehensive face database.
+
+| Upload for Recognition or Choose from Database | Recognition Result |
+|:----------------------:|:------------------:|
+| ![Upload Image for Recognition](assets/fr_1_upload.png) | ![Recognition Result](assets/fr_1_result.png) |
+| ![Choose from DB](assets/fr_2_choose_from_db.png) | ![Recognition Result](assets/fr_2_choose_from_db.png) |
+
+### Database Management
+
+Effortlessly add new individuals to your facial recognition database.
+
+| Add New Person to DB | Result After Adding Person |
+|:--------------------:|:--------------------------:|
+| ![Add Person](assets/db_manage_add_person.png) | ![Add Person Result](assets/db_manage_add_person_result.png) |
+| ![Database Section Overview](assets/databse_sec_img.png) |
 
 ---
+
 
 ## 💡 How It Works
 
@@ -211,18 +261,6 @@ The "Manage Database" section allows you to interact with the collection of know
 
 ---
 
-## 🙌 Acknowledgments
 
-This project stands on the shoulders of giants. Special thanks to:
-
-* **FaceNet:** For the groundbreaking work on face embeddings and the pre-trained model.
-* **TensorFlow & Keras:** The powerful deep learning framework used for model implementation.
-* **Streamlit:** For making it incredibly easy to build beautiful and interactive web applications with Python.
-* **PIL (Pillow):** For robust image processing capabilities.
-* **NumPy:** For efficient numerical operations.
-
----
-
-## 🧑‍💻 Developed By
-
-This robust application has been meticulously developed by me, a passionate and aspiring AI/ML Engineer and a third-year undergraduate in Software Engineering at NUST Islamabad. This project showcases my dedication to building high-impact solutions and my commitment to advancing my skills in AI/ML. I am excited to continue contributing to the field through practical applications and research.
+🧑‍💻 Developed By
+Crafted with passion and precision by Nabeel Shan, a third-year Software Engineering undergraduate at NUST Islamabad and an aspiring AI/ML Engineer. This project reflects my dedication to solving real-world problems through deep learning and computer vision, and demonstrates my ongoing commitment to mastering the field of Artificial Intelligence. I am continuously working to contribute through impactful projects, research, and practical innovation.
