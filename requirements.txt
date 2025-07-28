@@ -1,6 +1,6 @@
 streamlit
 tensorflow==2.5.0
-numpy==1.19.2
+numpy==1.19.5
 h5py==3.1.0
 matplotlib
 pydub
