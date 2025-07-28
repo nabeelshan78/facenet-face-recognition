@@ -1,9 +1,0 @@
-streamlit==1.37.0
-tensorflow==2.8.0 # THIS IS THE NEW CHANGE!
-h5py==3.1.0       # Keep this, it's generally compatible
-numpy==1.20.0     # Let's try this specific version, as it satisfies Streamlit's >=1.20 and is the lower bound.
-matplotlib
-pydub
-scipy
-Pillow==9.5.0
-protobuf==3.20.3
